@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "141027390783",
+    "project_id": "sai-seva-14399",
+    "storage_bucket": "sai-seva-14399.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141027390783:android:79316258847279bf7a0f8a",
+        "android_client_info": {
+          "package_name": "com.first.bookingform"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjdkq4SYsDCzQ6weNG8wykipGL1lVYKoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

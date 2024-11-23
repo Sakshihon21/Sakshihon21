@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EFEFEF"
+    android:weightSum="1">
+
+    <!-- Header Section (Home and Menu Icons) -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Home Icon"
+            android:layout_weight="0.1" />
+
+        <ImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Menu Icon"
+            android:layout_weight="0.1"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+    <!-- Personal Information Section -->
+    <TextView
+        android:id="@+id/tvPersonalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Information"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#EF4B17"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/etMobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No."
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:padding="12dp"
+            android:inputType="number"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Email Id."
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:padding="12dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Tour Package Information Section -->
+    <TextView
+        android:id="@+id/tvTourInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tour Package Information"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp" />
+
+    <!-- From Date -->
+    <EditText
+        android:id="@+id/etFromDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="From Date"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginTop="8dp"
+        android:inputType="none" /> <!-- Disabled keyboard, will be used for date picker -->
+
+    <!-- To Date -->
+    <EditText
+        android:id="@+id/etToDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To Date"
+        android:textColorHint="#000000"
+        android:drawablePadding="8dp"
+        android:textColor="#000000"
+        android:padding="12dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginTop="8dp"
+        android:inputType="none" /> <!-- Disabled keyboard, will be used for date picker -->
+
+    <!-- No of Persons Section -->
+    <EditText
+        android:id="@+id/etNoOfPersons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. of Persons"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:inputType="number" /> <!-- Set input type to number for number of persons -->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <CheckBox
+            android:id="@+id/cbAdults"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:text="Adults" />
+
+        <CheckBox
+            android:id="@+id/cbChildren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Children"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Other Details -->
+    <EditText
+        android:id="@+id/etOtherDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Other details"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textAllCaps="true"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="end" />
+
+</LinearLayout>
